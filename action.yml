@@ -1,6 +1,6 @@
 name: 'Auto Release Milestone'
 description: 'Drafts a GitHub release based on a newly closed milestone.'
-author: 'Jack'
+author: 'Jack '
 inputs:
   repo-token:
     description: 'The GITHUB_TOKEN used to authenticate to the current repository'
@@ -10,7 +10,7 @@ outputs:
     description: 'The URL of the GitHub release that was drafted'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'dockerfile'
   args:
     - ${{ inputs.repo-token }}
 branding:
